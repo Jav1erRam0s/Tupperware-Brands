@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/tupperware-brands/static/css/main.ddb85c95.css",
-    "main.js": "/tupperware-brands/static/js/main.cd4b2fa1.js",
-    "static/media/tarjeta.jpg": "/tupperware-brands/static/media/tarjeta.383d2a4549cb509ed3f5.jpg",
-    "static/media/BarlowCondensed-SemiBold.ttf": "/tupperware-brands/static/media/BarlowCondensed-SemiBold.d2b227f032d710a6870f.ttf",
-    "static/media/BarlowCondensed-Medium.ttf": "/tupperware-brands/static/media/BarlowCondensed-Medium.2afd924bd5156ee485b9.ttf",
-    "static/media/BarlowCondensed-Regular.ttf": "/tupperware-brands/static/media/BarlowCondensed-Regular.a51441e972d57b28e7c1.ttf",
-    "static/media/promo.png": "/tupperware-brands/static/media/promo.07ef9a9bb4f496cc28d7.png",
-    "static/media/Jav1erRam0s.png": "/tupperware-brands/static/media/Jav1erRam0s.85731701b37556d549b3.png",
-    "static/media/RussoOne-Regular.ttf": "/tupperware-brands/static/media/RussoOne-Regular.b2f5b287ccb8fd446eae.ttf",
-    "static/media/whatsapp.png": "/tupperware-brands/static/media/whatsapp.0c9a6df9d770bc23952f.png",
-    "static/media/telegram.png": "/tupperware-brands/static/media/telegram.f791610301532b777227.png",
-    "static/media/folletos.png": "/tupperware-brands/static/media/folletos.5a4d5e3099a00c6ae85a.png",
-    "static/media/productos.png": "/tupperware-brands/static/media/productos.31c7be5301f0ef9af8b2.png",
-    "index.html": "/tupperware-brands/index.html",
-    "main.ddb85c95.css.map": "/tupperware-brands/static/css/main.ddb85c95.css.map",
-    "main.cd4b2fa1.js.map": "/tupperware-brands/static/js/main.cd4b2fa1.js.map"
+    "main.css": "/Tupperware-Brands/static/css/main.c2399837.css",
+    "main.js": "/Tupperware-Brands/static/js/main.3d0ec903.js",
+    "static/media/tarjeta.jpg": "/Tupperware-Brands/static/media/tarjeta.383d2a4549cb509ed3f5.jpg",
+    "static/media/BarlowCondensed-SemiBold.ttf": "/Tupperware-Brands/static/media/BarlowCondensed-SemiBold.d2b227f032d710a6870f.ttf",
+    "static/media/BarlowCondensed-Medium.ttf": "/Tupperware-Brands/static/media/BarlowCondensed-Medium.2afd924bd5156ee485b9.ttf",
+    "static/media/BarlowCondensed-Regular.ttf": "/Tupperware-Brands/static/media/BarlowCondensed-Regular.a51441e972d57b28e7c1.ttf",
+    "static/media/promo.png": "/Tupperware-Brands/static/media/promo.07ef9a9bb4f496cc28d7.png",
+    "static/media/Jav1erRam0s.png": "/Tupperware-Brands/static/media/Jav1erRam0s.85731701b37556d549b3.png",
+    "static/media/RussoOne-Regular.ttf": "/Tupperware-Brands/static/media/RussoOne-Regular.b2f5b287ccb8fd446eae.ttf",
+    "static/media/whatsapp.png": "/Tupperware-Brands/static/media/whatsapp.0c9a6df9d770bc23952f.png",
+    "static/media/telegram.png": "/Tupperware-Brands/static/media/telegram.f791610301532b777227.png",
+    "static/media/folletos.png": "/Tupperware-Brands/static/media/folletos.5a4d5e3099a00c6ae85a.png",
+    "static/media/productos.png": "/Tupperware-Brands/static/media/productos.31c7be5301f0ef9af8b2.png",
+    "index.html": "/Tupperware-Brands/index.html",
+    "main.c2399837.css.map": "/Tupperware-Brands/static/css/main.c2399837.css.map",
+    "main.3d0ec903.js.map": "/Tupperware-Brands/static/js/main.3d0ec903.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddb85c95.css",
-    "static/js/main.cd4b2fa1.js"
+    "static/css/main.c2399837.css",
+    "static/js/main.3d0ec903.js"
   ]
 }
