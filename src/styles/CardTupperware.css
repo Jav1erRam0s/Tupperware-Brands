@@ -1,0 +1,52 @@
+.card img {
+  object-fit: contain;
+  height: 200px;
+}
+
+.card:hover {
+  border-style: outset;
+  border-color: #e40082;
+  border-width: 3px;
+}
+
+.card:hover .titleCard {
+  font-family: selectCard, selectCard; /*Si no carga bien la fuente importada aplica la sans-serif*/
+  background: linear-gradient(
+    90deg,
+    rgba(228, 0, 130, 1) 0%,
+    rgba(152, 0, 87, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 21px;
+}
+
+@font-face {
+  font-family: selectCard;
+  src: url("./fonts/Barlow_Condensed/BarlowCondensed-SemiBold.ttf");
+}
+
+.centerH {
+  text-align: center;
+}
+
+.titleCard {
+  font-family: regularCard, regularCard; /*Si no carga bien la fuente importada aplica la sans-serif*/
+  color: #212529;
+  font-size: 21px;
+}
+
+.precioStock {
+  font-family: regularCard, regularCard; /*Si no carga bien la fuente importada aplica la sans-serif*/
+  color: black;
+  font-size: 18px;
+}
+
+.precio {
+  color: #0e6655;
+}
+
+@font-face {
+  font-family: regularCard;
+  src: url("./fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf");
+}

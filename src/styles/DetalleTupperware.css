@@ -1,0 +1,59 @@
+.carouselImg {
+  object-fit: contain;
+  height: 260px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+}
+
+.carouselVid {
+  object-fit: contain;
+  height: 260px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.titleModal {
+  font-family: titleModal, titleModal;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 0, 130, 1) 0%,
+    rgba(152, 0, 87, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+}
+
+@font-face {
+  font-family: titleModal;
+  src: url("./fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf");
+}
+
+#textAreaDescripcion {
+  font-family: textModal, textModal; /*Si no carga bien la fuente importada aplica la sans-serif*/
+  font-size: 17px;
+  background-color: #f4f6f7;
+
+  resize: none;
+  color: transparent;
+  text-shadow: 0px 0px 0px #e40082;
+  height: 91px;
+  -webkit-touch-callout: none; /* Safari */
+  -webkit-user-select: none; /* Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+@font-face {
+  font-family: textModal;
+  src: url("./fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf");
+}

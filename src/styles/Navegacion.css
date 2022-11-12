@@ -1,0 +1,102 @@
+/* Fuente de: https://fonts.google.com/ */
+/* Importa el tipo de letra, tantos como quisiera */
+/* Fuente Nav-Bar*/
+
+#titleNavMobile {
+  font-family: title, title; /*Si no carga bien la fuente importada aplica la sans-serif*/
+  color: white;
+  margin-bottom: 0px;
+  font-size: 23px;
+}
+
+@font-face {
+  font-family: title;
+  src: url("./fonts/Russo_One/RussoOne-Regular.ttf");
+}
+
+.itemsNav {
+  font-family: items, items; /*Si no carga bien la fuente importada aplica la sans-serif*/
+  color: white;
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: items;
+  src: url("./fonts/Barlow_Condensed/BarlowCondensed-Medium.ttf");
+}
+
+.imgLogo {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+}
+
+.nav-link-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 25px;
+}
+
+.linkNav {
+  color: white;
+  text-decoration: none;
+}
+
+.linkNav:hover {
+  color: #e40082;
+  text-decoration: none;
+}
+
+.linkProducto {
+  color: #212529;
+  text-decoration: none;
+}
+
+.linkProducto:hover {
+  color: #e40082;
+  text-decoration: none;
+}
+
+#dropdown-productos {
+  --bs-dropdown-link-active-bg: #e9ecef;
+}
+
+.linkFolleto {
+  color: #212529;
+  text-decoration: none;
+}
+
+.linkFolleto:hover {
+  color: #e40082;
+  text-decoration: none;
+}
+
+#dropdown-folletos {
+  --bs-dropdown-link-active-bg: #e9ecef;
+}
+
+.linkCamp {
+  text-decoration: none;
+}
+
+.styleItems {
+  margin-left: 25px;
+}
+
+.styleItemEnd {
+  margin-right: 10px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../images/logo.png") !important;
+}
+
+@media (max-width: 991px) {
+  .imgLogo {
+    display: none;
+  }
+
+  #titleNavMobile {
+    display: inline;
+  }
+}

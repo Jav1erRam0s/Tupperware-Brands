@@ -1,0 +1,69 @@
+#filtro-tupper {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(33, 37, 41, 1) 100%
+  );
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+
+  border-radius: 10px;
+
+  border-style: outset;
+  border-color: #e40082;
+  border-width: 3px;
+}
+
+#input-producto {
+  text-align: center;
+
+  font-family: optionFilter, optionFilter;
+  color: #212529;
+  font-size: 15px;
+}
+
+#select-precio {
+  text-align: center;
+  font-family: labelFiltro, labelFiltro;
+  color: #212529;
+  font-size: 15px;
+}
+
+#select-capacidad {
+  text-align: center;
+  font-family: labelFiltro, labelFiltro;
+  color: #212529;
+  font-size: 15px;
+}
+
+select option {
+  text-align: center;
+  font-family: optionFilter, optionFilter;
+  color: #212529;
+  font-size: 15px;
+}
+
+.label-filtro {
+  font-family: labelFiltro, labelFiltro;
+  color: white;
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+.action-filter {
+  font-family: labelFiltro, labelFiltro;
+  color: white;
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: labelFiltro;
+  src: url("./fonts/Barlow_Condensed/BarlowCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: optionFilter;
+  src: url("./fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf");
+}

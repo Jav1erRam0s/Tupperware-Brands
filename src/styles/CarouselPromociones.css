@@ -1,0 +1,92 @@
+#carousel-promos {
+  height: calc(100vh - 66px);
+  background: linear-gradient(
+    180deg,
+    rgba(226, 0, 136, 1) 0%,
+    rgba(99, 4, 96, 1) 100%
+  );
+
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+}
+
+.carousel-body {
+  border-radius: 10px;
+  border-style: outset;
+  border-color: rgb(33, 37, 41);
+  border-width: 2px;
+  background-color: white;
+}
+
+.carousel-promo-img {
+  object-fit: contain;
+  width: 100%;
+  height: calc(100vh - 122px);
+}
+
+@media (max-width: 991px) {
+  #carousel-promos {
+    height: calc(100vh - 56px);
+  }
+  .carousel-promo-img {
+    height: calc(100vh - 112px);
+  }
+}
+/* Texto carousel */
+
+.info-carousel-promo-title {
+  font-family: info-carousel-promo-title, info-carousel-promo-title;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(33, 37, 41) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+@font-face {
+  font-family: info-carousel-promo-title;
+  src: url("./fonts/Barlow_Condensed/BarlowCondensed-SemiBold.ttf");
+}
+
+.info-carousel-promo-descripcion {
+  font-family: info-carousel-promo-descripcion, info-carousel-promo-descripcion;
+  color: #212529;
+  font-size: 21px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@font-face {
+  font-family: info-carousel-promo-descripcion;
+  src: url("./fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf");
+}
+
+.info-carousel-promo-precio {
+  font-family: info-carousel-promo-precio, info-carousel-promo-precio;
+  color: black;
+  font-size: 21px;
+}
+
+@font-face {
+  font-family: info-carousel-promo-precio;
+  src: url("./fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf");
+}
+
+.precio-promo-img {
+  height: 109px;
+  width: 150px;
+}
+
+.contenedor-img {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.centrado-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
