@@ -55,7 +55,7 @@ class DetalleTupperware extends React.Component {
             <div
               id="carousel-Actions-Details-Indicators"
               class="carousel slide"
-              data-bs-ride="true"
+              data-bs-interval="false"
             >
               <div class="carousel-inner">{slides}</div>
               <button
