@@ -195,6 +195,14 @@ class ListaTupperware extends React.Component {
                 </span>
               )}
               {this.state.status === true &&
+                this.state.productosFilter.length === 0 && (
+                  <span className="col-12 text-center">
+                    <h5 className="infoTupperware">
+                      No se encontraron resultados que coincidan con la busqueda
+                    </h5>
+                  </span>
+                )}
+              {this.state.status === true &&
                 this.state.productosPage.map((element, index) => {
                   return (
                     <span
