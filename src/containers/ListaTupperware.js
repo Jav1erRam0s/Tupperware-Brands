@@ -17,6 +17,7 @@ class ListaTupperware extends React.Component {
       actualPage: 1,
       status: false,
       promociones: [],
+      promosEnable: false,
       statusPromos: false,
     };
   }
@@ -25,6 +26,7 @@ class ListaTupperware extends React.Component {
     axios.get(`${url.promociones}`).then((res) => {
       this.setState({
         promociones: res.data.promociones,
+        promosEnable: res.data.enable,
         statusPromos: true,
       });
     });
@@ -173,7 +175,8 @@ class ListaTupperware extends React.Component {
           {/* PROMOCIONES */}
           {this.state.statusPromos === true &&
             this.state.actualPage === 1 &&
-            this.state.promociones.length !== 0 && (
+            this.state.promociones.length !== 0 &&
+            this.state.promosEnable === true && (
               <CarouselPromociones promociones={this.state.promociones} />
             )}
           {/* LISTA DE PRODUCTOS */}
