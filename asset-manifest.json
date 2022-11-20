@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tupperware-Brands/static/css/main.c2399837.css",
-    "main.js": "/Tupperware-Brands/static/js/main.94fd1082.js",
+    "main.js": "/Tupperware-Brands/static/js/main.59a5a410.js",
     "static/media/tarjeta.jpg": "/Tupperware-Brands/static/media/tarjeta.383d2a4549cb509ed3f5.jpg",
     "static/media/BarlowCondensed-SemiBold.ttf": "/Tupperware-Brands/static/media/BarlowCondensed-SemiBold.d2b227f032d710a6870f.ttf",
     "static/media/BarlowCondensed-Medium.ttf": "/Tupperware-Brands/static/media/BarlowCondensed-Medium.2afd924bd5156ee485b9.ttf",
@@ -15,10 +15,10 @@
     "static/media/productos.png": "/Tupperware-Brands/static/media/productos.31c7be5301f0ef9af8b2.png",
     "index.html": "/Tupperware-Brands/index.html",
     "main.c2399837.css.map": "/Tupperware-Brands/static/css/main.c2399837.css.map",
-    "main.94fd1082.js.map": "/Tupperware-Brands/static/js/main.94fd1082.js.map"
+    "main.59a5a410.js.map": "/Tupperware-Brands/static/js/main.59a5a410.js.map"
   },
   "entrypoints": [
     "static/css/main.c2399837.css",
-    "static/js/main.94fd1082.js"
+    "static/js/main.59a5a410.js"
   ]
 }
