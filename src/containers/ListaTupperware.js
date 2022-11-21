@@ -36,7 +36,16 @@ class ListaTupperware extends React.Component {
     axios.get(`${url.tupperware}`).then((res) => {
       this.setState({
         productos: res.data.productos,
-        productosFilter: res.data.productos,
+        productosFilter: res.data.productos.sort(function (a, b) {
+          if (a.precio > b.precio) {
+            return 1;
+          }
+          if (a.precio < b.precio) {
+            return -1;
+          }
+          // a must be equal to b
+          return 0;
+        }),
         status: true,
       });
 
@@ -148,6 +157,19 @@ class ListaTupperware extends React.Component {
           producto.capacidad != null
       );
     }
+
+    //ordenamiento por precio
+    newProductosFilter.sort(function (a, b) {
+      if (a.precio > b.precio) {
+        return 1;
+      }
+      if (a.precio < b.precio) {
+        return -1;
+      }
+      // a must be equal to b
+      return 0;
+    });
+
     //inicializo la paginacion en la hoja 1
     let newActualPage = 1;
     //evaluo la cantidad de paginas en la paginacion

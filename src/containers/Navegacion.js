@@ -119,7 +119,6 @@ class Navegacion extends React.Component {
     var mostrar = true;
 
     for (const element of folletos) {
-      console.log(element);
       const tiempoTranscurrido = Date.now();
       var hoy = new Date(tiempoTranscurrido);
       const diaHoy = hoy.getDate();
