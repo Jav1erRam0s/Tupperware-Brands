@@ -114,6 +114,42 @@ class Navegacion extends React.Component {
     }
   };
 
+  mostrarNoDisponible() {
+    var folletos = this.state.folletos;
+    var mostrar = true;
+
+    for (const element of folletos) {
+      console.log(element);
+      const tiempoTranscurrido = Date.now();
+      var hoy = new Date(tiempoTranscurrido);
+      const diaHoy = hoy.getDate();
+      const mesHoy = hoy.getMonth() + 1;
+      const anioHoy = hoy.getFullYear();
+      const fechaHoy = new Date(anioHoy, mesHoy, diaHoy);
+
+      const vigencia = new Date(element.cierra);
+      const diaVigente = vigencia.getDate() + 1;
+      const mesVigente = vigencia.getMonth() + 1;
+      const anioVigente = hoy.getFullYear();
+      const fechaVigente = new Date(anioVigente, mesVigente, diaVigente);
+
+      if (fechaVigente >= fechaHoy) {
+        mostrar = false;
+        break;
+      }
+    }
+
+    if (mostrar) {
+      return (
+        <DropdownItem>
+          <span onClick={this.closeToggle} className="itemsNav linkFolleto">
+            No disponible
+          </span>
+        </DropdownItem>
+      );
+    }
+  }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen,
@@ -196,6 +232,7 @@ class Navegacion extends React.Component {
                         </span>
                       );
                     })}
+                  {this.mostrarNoDisponible()}
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem className="styleItems styleItemEnd">
