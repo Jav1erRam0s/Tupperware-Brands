@@ -1,13 +1,24 @@
-.carouselImg {
-  object-fit: contain;
+.carousel-item {
   height: 260px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+}
+
+.carousel img {
+  /* Ajustar imagen al contenido (cambiar el tamaño de la imagen) */
+  max-width: 100%;
+  max-height: 100%;
+
+  /* Alineacion horizontal y vertical de la img en el contenedor */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+
   border-radius: 7px;
 }
 
-.carouselVid {
+.carousel iframe {
   object-fit: contain;
   height: 260px;
   display: block;
