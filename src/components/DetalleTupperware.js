@@ -18,17 +18,17 @@ class DetalleTupperware extends React.Component {
       return (
         <div>
           {index === 0 && (
-            <div class="carousel-item active">
+            <div class="carousel-item active carousel-item-slide">
               <img src={item} alt={item.index} />
             </div>
           )}
           {index !== 0 && item.startsWith("https://i.ibb") && (
-            <div class="carousel-item">
+            <div class="carousel-item carousel-item-slide">
               <img src={item} alt={item.index} />
             </div>
           )}
           {index !== 0 && item.startsWith("https://i.ibb") === false && (
-            <div class="carousel-item">
+            <div class="carousel-item carousel-item-slide">
               <iframe src={item} title={item.index}></iframe>
             </div>
           )}

@@ -1,9 +1,9 @@
-.carousel-item {
+.carousel-item-slide {
   height: 260px;
   width: 100%;
 }
 
-.carousel img {
+.carousel-item-slide img {
   /* Ajustar imagen al contenido (cambiar el tamaño de la imagen) */
   max-width: 100%;
   max-height: 100%;
