@@ -3,7 +3,15 @@ import "../styles/CarouselPromociones.css";
 import Promo from "../images/promo.png";
 
 class CarouselPromociones extends React.Component {
+  calculoDePrecio(precioEnDolar, cotizacion) {
+    var precio = precioEnDolar * cotizacion;
+    var redondeo = Math.round(precio / 10) * 10;
+    return redondeo.toLocaleString("de-DE");
+  }
+
   render() {
+    const cotizacion = this.props.cotizacion;
+
     return (
       <div id="carousel-promos">
         <div
@@ -36,7 +44,11 @@ class CarouselPromociones extends React.Component {
                             <div className="centrado-img">
                               <p className="info-carousel-promo-precio">
                                 <b>
-                                  $ {element.precio.toLocaleString("de-DE")}
+                                  ${" "}
+                                  {this.calculoDePrecio(
+                                    element.precio,
+                                    cotizacion
+                                  )}
                                 </b>
                               </p>
                             </div>
@@ -62,7 +74,11 @@ class CarouselPromociones extends React.Component {
                               <div className="centrado-img">
                                 <p className="info-carousel-promo-precio">
                                   <b>
-                                    $ {element.precio.toLocaleString("de-DE")}
+                                    ${" "}
+                                    {this.calculoDePrecio(
+                                      element.precio,
+                                      cotizacion
+                                    )}
                                   </b>
                                 </p>
                               </div>
@@ -95,7 +111,13 @@ class CarouselPromociones extends React.Component {
                           ></img>
                           <div className="centrado-img">
                             <p className="info-carousel-promo-precio">
-                              <b>$ {element.precio.toLocaleString("de-DE")}</b>
+                              <b>
+                                ${" "}
+                                {this.calculoDePrecio(
+                                  element.precio,
+                                  cotizacion
+                                )}
+                              </b>
                             </p>
                           </div>
                         </div>
@@ -120,7 +142,11 @@ class CarouselPromociones extends React.Component {
                             <div className="centrado-img">
                               <p className="info-carousel-promo-precio">
                                 <b>
-                                  $ {element.precio.toLocaleString("de-DE")}
+                                  ${" "}
+                                  {this.calculoDePrecio(
+                                    element.precio,
+                                    cotizacion
+                                  )}
                                 </b>
                               </p>
                             </div>

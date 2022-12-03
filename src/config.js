@@ -9,6 +9,8 @@ const url = {
     "https://raw.githubusercontent.com/Jav1erRam0s/JSON.API-Tupperware.Brands/main/promociones.json",
   folletos:
     "https://raw.githubusercontent.com/Jav1erRam0s/JSON.API-Tupperware.Brands/main/folletos.json",
+  dolar:
+    "https://raw.githubusercontent.com/Jav1erRam0s/JSON.API-Tupperware.Brands/main/dolar.json",
 };
 
 export default url;

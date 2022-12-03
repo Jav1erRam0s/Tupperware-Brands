@@ -12,13 +12,27 @@ class ListaFullercosmetics extends React.Component {
       productosPage: [],
       paginacion: [],
       actualPage: 1,
-      status: false,
+      cotizacion: 0,
+      statusProductos: false,
+      statusCotizacion: false,
     };
   }
 
   cargarProductos() {
     axios.get(`${url.fullercosmetics}`).then((res) => {
-      this.setState({ productos: res.data.productos, status: true });
+      this.setState({
+        productos: res.data.productos.sort(function (a, b) {
+          if (a.precio > b.precio) {
+            return 1;
+          }
+          if (a.precio < b.precio) {
+            return -1;
+          }
+          // a must be equal to b
+          return 0;
+        }),
+        status: true,
+      });
 
       this.setState({
         productosPage: this.state.productos.slice(
@@ -36,8 +50,18 @@ class ListaFullercosmetics extends React.Component {
     });
   }
 
+  cargarDolar() {
+    axios.get(`${url.dolar}`).then((res) => {
+      this.setState({
+        cotizacion: res.data.cotizacion,
+        statusCotizacion: true,
+      });
+    });
+  }
+
   componentDidMount() {
     this.cargarProductos();
+    this.cargarDolar();
   }
 
   goToPage(page) {
@@ -72,22 +96,28 @@ class ListaFullercosmetics extends React.Component {
               {""}
             </a>
             <div className="row px-2 py-2">
-              {this.state.status === true && this.state.productos.length === 0 && (
-                <span className="col-12 text-center">
-                  <h5 className="infoFullercosmetics">
-                    A la brevedad tendremos productos de la linea
-                    fullercosmetics
-                  </h5>
-                </span>
-              )}
               {this.state.status === true &&
+                this.state.statusCotizacion === true &&
+                this.state.productos.length === 0 && (
+                  <span className="col-12 text-center">
+                    <h5 className="infoFullercosmetics">
+                      A la brevedad tendremos productos de la linea
+                      fullercosmetics
+                    </h5>
+                  </span>
+                )}
+              {this.state.status === true &&
+                this.state.statusCotizacion === true &&
                 this.state.productosPage.map((element, index) => {
                   return (
                     <span
                       className="col-12 col-sm-6 col-md-6 col-lg-3 mb-3"
                       key={index}
                     >
-                      <CardTupperware producto={element} />
+                      <CardTupperware
+                        producto={element}
+                        cotizacion={this.state.cotizacion}
+                      />
                     </span>
                   );
                 })}

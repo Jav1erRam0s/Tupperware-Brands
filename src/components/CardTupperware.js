@@ -18,8 +18,15 @@ class CardTupperware extends React.Component {
     this.setState({ estadoModal: false });
   };
 
+  calculoDePrecio(precioEnDolar, cotizacion) {
+    var precio = precioEnDolar * cotizacion;
+    var redondeo = Math.round(precio / 10) * 10;
+    return redondeo.toLocaleString("de-DE");
+  }
+
   render() {
     const producto = this.props.producto;
+    const cotizacion = this.props.cotizacion;
 
     return (
       <React.Fragment>
@@ -40,7 +47,9 @@ class CardTupperware extends React.Component {
                 <div class="col-6">
                   <div className="centerH precio">
                     <h4>
-                      <b>$ {producto.precio.toLocaleString("de-DE")}</b>
+                      <b>
+                        $ {this.calculoDePrecio(producto.precio, cotizacion)}
+                      </b>
                     </h4>
                   </div>
                 </div>
