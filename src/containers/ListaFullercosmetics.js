@@ -13,6 +13,7 @@ class ListaFullercosmetics extends React.Component {
       paginacion: [],
       actualPage: 1,
       cotizacion: 0,
+      cantidadProductosPage: 12,
       statusProductos: false,
       statusCotizacion: false,
     };
@@ -36,12 +37,14 @@ class ListaFullercosmetics extends React.Component {
 
       this.setState({
         productosPage: this.state.productos.slice(
-          (this.state.actualPage - 1) * 8,
-          this.state.actualPage * 8
+          (this.state.actualPage - 1) * this.state.cantidadProductosPage,
+          this.state.actualPage * this.state.cantidadProductosPage
         ),
       });
 
-      const cantidadPaginas = Math.ceil(this.state.productos.length / 8);
+      const cantidadPaginas = Math.ceil(
+        this.state.productos.length / this.state.cantidadProductosPage
+      );
       var list = [];
       for (var i = 1; i <= cantidadPaginas; i++) {
         list.push(i);
@@ -67,7 +70,10 @@ class ListaFullercosmetics extends React.Component {
   goToPage(page) {
     this.setState({
       actualPage: page,
-      productosPage: this.state.productos.slice((page - 1) * 8, page * 8),
+      productosPage: this.state.productos.slice(
+        (page - 1) * this.state.cantidadProductosPage,
+        page * this.state.cantidadProductosPage
+      ),
     });
   }
 

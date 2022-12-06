@@ -17,6 +17,7 @@ class ListaTupperware extends React.Component {
       actualPage: 1,
       promociones: [],
       cotizacion: 0,
+      cantidadProductosPage: 12,
       promosEnable: false,
       statusProductos: false,
       statusPromos: false,
@@ -53,12 +54,14 @@ class ListaTupperware extends React.Component {
 
       this.setState({
         productosPage: this.state.productosFilter.slice(
-          (this.state.actualPage - 1) * 8,
-          this.state.actualPage * 8
+          (this.state.actualPage - 1) * this.state.cantidadProductosPage,
+          this.state.actualPage * this.state.cantidadProductosPage
         ),
       });
 
-      const cantidadPaginas = Math.ceil(this.state.productosFilter.length / 8);
+      const cantidadPaginas = Math.ceil(
+        this.state.productosFilter.length / this.state.cantidadProductosPage
+      );
       var list = [];
       for (var i = 1; i <= cantidadPaginas; i++) {
         list.push(i);
@@ -85,7 +88,10 @@ class ListaTupperware extends React.Component {
   goToPage(page) {
     this.setState({
       actualPage: page,
-      productosPage: this.state.productosFilter.slice((page - 1) * 8, page * 8),
+      productosPage: this.state.productosFilter.slice(
+        (page - 1) * this.state.cantidadProductosPage,
+        page * this.state.cantidadProductosPage
+      ),
     });
   }
 
@@ -183,7 +189,9 @@ class ListaTupperware extends React.Component {
     //inicializo la paginacion en la hoja 1
     let newActualPage = 1;
     //evaluo la cantidad de paginas en la paginacion
-    const cantidadPaginas = Math.ceil(newProductosFilter.length / 8);
+    const cantidadPaginas = Math.ceil(
+      newProductosFilter.length / this.state.cantidadProductosPage
+    );
     var list = [];
     for (var i = 1; i <= cantidadPaginas; i++) {
       list.push(i);
@@ -193,8 +201,8 @@ class ListaTupperware extends React.Component {
       actualPage: newActualPage,
       productosFilter: newProductosFilter,
       productosPage: newProductosFilter.slice(
-        (newActualPage - 1) * 8,
-        newActualPage * 8
+        (newActualPage - 1) * this.state.cantidadProductosPage,
+        newActualPage * this.state.cantidadProductosPage
       ),
       paginacion: list,
     });
