@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/Tupperware-Brands/static/css/main.8c29483d.css",
-    "main.js": "/Tupperware-Brands/static/js/main.93ac472b.js",
-    "static/media/tarjeta.jpg": "/Tupperware-Brands/static/media/tarjeta.383d2a4549cb509ed3f5.jpg",
+    "main.css": "/Tupperware-Brands/static/css/main.63b7eeb1.css",
+    "main.js": "/Tupperware-Brands/static/js/main.30af73d5.js",
     "static/media/BarlowCondensed-SemiBold.ttf": "/Tupperware-Brands/static/media/BarlowCondensed-SemiBold.d2b227f032d710a6870f.ttf",
     "static/media/BarlowCondensed-Medium.ttf": "/Tupperware-Brands/static/media/BarlowCondensed-Medium.2afd924bd5156ee485b9.ttf",
     "static/media/BarlowCondensed-Regular.ttf": "/Tupperware-Brands/static/media/BarlowCondensed-Regular.a51441e972d57b28e7c1.ttf",
     "static/media/promo.png": "/Tupperware-Brands/static/media/promo.07ef9a9bb4f496cc28d7.png",
-    "static/media/Jav1erRam0s.png": "/Tupperware-Brands/static/media/Jav1erRam0s.85731701b37556d549b3.png",
+    "static/media/flupito.jpeg": "/Tupperware-Brands/static/media/flupito.8bbb7de95ee9b40d1c01.jpeg",
     "static/media/RussoOne-Regular.ttf": "/Tupperware-Brands/static/media/RussoOne-Regular.b2f5b287ccb8fd446eae.ttf",
     "static/media/whatsapp.png": "/Tupperware-Brands/static/media/whatsapp.0c9a6df9d770bc23952f.png",
-    "static/media/telegram.png": "/Tupperware-Brands/static/media/telegram.f791610301532b777227.png",
     "static/media/folletos.png": "/Tupperware-Brands/static/media/folletos.5a4d5e3099a00c6ae85a.png",
     "static/media/productos.png": "/Tupperware-Brands/static/media/productos.31c7be5301f0ef9af8b2.png",
+    "static/media/facebook.png": "/Tupperware-Brands/static/media/facebook.811e90dcee78ca56ec1b.png",
     "index.html": "/Tupperware-Brands/index.html",
-    "main.8c29483d.css.map": "/Tupperware-Brands/static/css/main.8c29483d.css.map",
-    "main.93ac472b.js.map": "/Tupperware-Brands/static/js/main.93ac472b.js.map"
+    "main.63b7eeb1.css.map": "/Tupperware-Brands/static/css/main.63b7eeb1.css.map",
+    "main.30af73d5.js.map": "/Tupperware-Brands/static/js/main.30af73d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c29483d.css",
-    "static/js/main.93ac472b.js"
+    "static/css/main.63b7eeb1.css",
+    "static/js/main.30af73d5.js"
   ]
 }
