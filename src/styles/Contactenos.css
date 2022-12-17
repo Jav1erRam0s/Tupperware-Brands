@@ -44,13 +44,19 @@
     rgba(0, 0, 0, 1) 0%,
     rgba(33, 37, 41, 1) 100%
   ); */
-  background-image: url("../images/tarjeta.jpg");
+  /* background-image: url("../images/tarjeta.jpg"); */
   background-size: cover;
   border-radius: 7px;
   border-style: outset;
-  border-color: #00a2e8;
+  /* border-color: #00a2e8; */
   border-width: 2px;
   margin-bottom: 20px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(226, 0, 136, 1) 0%,
+    rgba(99, 4, 96, 1) 100%
+  );
 }
 
 .tarjera-img {
@@ -62,6 +68,8 @@
   width: 100px;
   margin-top: 25px;
   margin-left: 20px;
+
+  border-radius: 50%;
 }
 
 .tarjetaName {

@@ -1,9 +1,9 @@
 import React from "react";
 import Footer from "../components/Footer.js";
 import "../styles/Contactenos.css";
-import Jav1erRam0s from "../images/Jav1erRam0s.png";
+import flupito from "../images/flupito.jpeg";
 import whatsapp from "../images/whatsapp.png";
-import telegram from "../images/telegram.png";
+import facebook from "../images/facebook.png";
 
 class Contactenos extends React.Component {
   render() {
@@ -33,24 +33,24 @@ class Contactenos extends React.Component {
                     <div class="tarjeta-body">
                       <div class="row">
                         <div class="col-5 tarjera-img">
-                          <img src={Jav1erRam0s} alt="Jav1erRam0s" />
+                          <img src={flupito} alt="flupito" />
                         </div>
                         <div class="col-7">
-                          <h5 className="tarjetaName">Javi</h5>
+                          <h5 className="tarjetaName">Alicia</h5>
                           <div className="tarjetaData">
                             <a
-                              href="https://wa.me/5491132432819"
+                              href="https://wa.me/5491125021478"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               <img src={whatsapp} alt="iconWht" />
                             </a>
                             <a
-                              href="https://t.me/Jav1erRam0s"
+                              href="https://www.facebook.com/alicia.aranibar.102"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
-                              <img src={telegram} alt="iconTgm" />
+                              <img src={facebook} alt="iconFb" />
                             </a>
                           </div>
                         </div>
