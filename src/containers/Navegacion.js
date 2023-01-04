@@ -45,9 +45,9 @@ class Navegacion extends React.Component {
   }
 
   pasearFecha = (dateStr) => {
-    const fecha = new Date(dateStr);
-    var dia = fecha.getDate() + 1;
-    var mesNum = fecha.getMonth() + 1;
+    var dia = parseInt(dateStr.substr(8, 2));
+    var mesNum = parseInt(dateStr.substr(5, 2));
+
     var mesText = "";
     if (mesNum === 1) {
       mesText = "Eneno";
@@ -84,15 +84,13 @@ class Navegacion extends React.Component {
     const diaHoy = hoy.getDate();
     const mesHoy = hoy.getMonth() + 1;
     const anioHoy = hoy.getFullYear();
-    const fechaHoy = new Date(anioHoy, mesHoy, diaHoy);
 
     const vigencia = new Date(element.cierra);
     const diaVigente = vigencia.getDate() + 1;
     const mesVigente = vigencia.getMonth() + 1;
-    const anioVigente = hoy.getFullYear();
-    const fechaVigente = new Date(anioVigente, mesVigente, diaVigente);
+    const anioVigente = vigencia.getFullYear();
 
-    if (fechaVigente >= fechaHoy) {
+    if (anioVigente > anioHoy) {
       return (
         <DropdownItem>
           <a
@@ -111,6 +109,31 @@ class Navegacion extends React.Component {
           </a>
         </DropdownItem>
       );
+    } else {
+      if (
+        anioVigente === anioHoy &&
+        mesVigente >= mesHoy &&
+        diaVigente >= diaHoy
+      ) {
+        return (
+          <DropdownItem>
+            <a
+              href={element.enlace}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkCamp"
+            >
+              <span onClick={this.closeToggle} className="linkFolleto">
+                • {element.nombre}
+                {" - "}
+                <span class="badge bg-warning text-dark">
+                  Cierra : {this.pasearFecha(element.cierra)}
+                </span>
+              </span>
+            </a>
+          </DropdownItem>
+        );
+      }
     }
   };
 
