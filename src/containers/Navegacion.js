@@ -90,7 +90,10 @@ class Navegacion extends React.Component {
     const mesVigente = vigencia.getMonth() + 1;
     const anioVigente = vigencia.getFullYear();
 
-    if (anioVigente > anioHoy) {
+    if (
+      anioVigente > anioHoy ||
+      (anioVigente === anioHoy && mesVigente >= mesHoy && diaVigente >= diaHoy)
+    ) {
       return (
         <DropdownItem>
           <a
@@ -109,31 +112,6 @@ class Navegacion extends React.Component {
           </a>
         </DropdownItem>
       );
-    } else {
-      if (
-        anioVigente === anioHoy &&
-        mesVigente >= mesHoy &&
-        diaVigente >= diaHoy
-      ) {
-        return (
-          <DropdownItem>
-            <a
-              href={element.enlace}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="linkCamp"
-            >
-              <span onClick={this.closeToggle} className="linkFolleto">
-                • {element.nombre}
-                {" - "}
-                <span class="badge bg-warning text-dark">
-                  Cierra : {this.pasearFecha(element.cierra)}
-                </span>
-              </span>
-            </a>
-          </DropdownItem>
-        );
-      }
     }
   };
 
