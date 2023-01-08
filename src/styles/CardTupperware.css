@@ -1,6 +1,14 @@
 .card img {
+  margin-top: 25px;
   object-fit: contain;
   height: 200px;
+}
+
+.estilo-card-img {
+  text-align: center;
+  max-width: 100%;
+
+  border-radius: 7px;
 }
 
 .card:hover {

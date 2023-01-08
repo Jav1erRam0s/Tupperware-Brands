@@ -17,7 +17,7 @@ class ListaTupperware extends React.Component {
       actualPage: 1,
       promociones: [],
       cotizacion: 0,
-      cantidadProductosPage: 12,
+      cantidadProductosPage: 20,
       promosEnable: false,
       statusProductos: false,
       statusPromos: false,

@@ -31,11 +31,13 @@ class CardTupperware extends React.Component {
     return (
       <React.Fragment>
         <div class="card" onClick={this.showDetails}>
-          <img
-            src={producto.imgvid[0]}
-            class="card-img-top"
-            alt={producto.nombre}
-          />
+          <div class="estilo-card-img">
+            <img
+              src={producto.imgvid[0]}
+              class="estilo-card-img"
+              alt={producto.nombre}
+            />
+          </div>
           <div class="card-body">
             <p class="card-text">
               <div className="centerH">
