@@ -50,7 +50,7 @@ class Navegacion extends React.Component {
 
     var mesText = "";
     if (mesNum === 1) {
-      mesText = "Eneno";
+      mesText = "Enero";
     } else if (mesNum === 2) {
       mesText = "Febrero";
     } else if (mesNum === 3) {
