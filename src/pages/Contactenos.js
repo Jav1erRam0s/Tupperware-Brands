@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer.js";
 import "../styles/Contactenos.css";
-import flupito from "../images/flupito.jpeg";
+import flupito from "../images/flupito.png";
 import whatsapp from "../images/whatsapp.png";
 import facebook from "../images/facebook.png";
 
