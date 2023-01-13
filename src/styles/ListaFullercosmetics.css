@@ -16,6 +16,11 @@
   }
 }
 
+.padding-list-product {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
 /* Lista de productos vacio */
 
 .infoFullercosmetics {

@@ -46,7 +46,7 @@ class FiltroTupperware extends React.Component {
                 class="form-control form-control-sm"
                 value={this.state.valorInput}
                 id="input-producto"
-                placeholder="Taza milano"
+                placeholder="Practi delicias"
                 onChange={this.changeValueInput}
               />
             </div>

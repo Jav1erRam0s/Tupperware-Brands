@@ -31,10 +31,12 @@ class CarouselPromociones extends React.Component {
                           class="d-block w-100 carousel-promo-img"
                           alt={element.nombre}
                         />
-                        <div class="d-lg-none d-sm-block carousel-caption text-center">
+                        <div class="d-lg-none d-sm-block carousel-caption text-center position-absolute top-0 bottom-0 mt-5">
                           <h4 className="text-center info-carousel-promo-title">
                             {element.nombre}
                           </h4>
+                        </div>
+                        <div class="d-lg-none d-sm-block carousel-caption text-center">
                           <div className="contenedor-img">
                             <img
                               src={Promo}
@@ -99,10 +101,12 @@ class CarouselPromociones extends React.Component {
                         class="d-block w-100 carousel-promo-img"
                         alt={element.nombre}
                       />
-                      <div class="d-lg-none d-sm-block carousel-caption text-center">
-                        <h5 className="text-center info-carousel-promo-title">
+                      <div class="d-lg-none d-sm-block carousel-caption text-center position-absolute top-0 bottom-0 mt-5">
+                        <h4 className="text-center info-carousel-promo-title">
                           {element.nombre}
-                        </h5>
+                        </h4>
+                      </div>
+                      <div class="d-lg-none d-sm-block carousel-caption text-center">
                         <div className="contenedor-img">
                           <img
                             src={Promo}

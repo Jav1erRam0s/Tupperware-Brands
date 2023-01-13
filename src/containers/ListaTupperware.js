@@ -248,21 +248,22 @@ class ListaTupperware extends React.Component {
                     </h5>
                   </span>
                 )}
-              {this.state.statusProductos === true &&
-                this.state.statusCotizacion === true &&
-                this.state.productosPage.map((element, index) => {
-                  return (
-                    <span
-                      className="col-12 col-sm-6 col-md-6 col-lg-3 mb-3"
-                      key={index}
-                    >
-                      <CardTupperware
-                        producto={element}
-                        cotizacion={this.state.cotizacion}
-                      />
-                    </span>
-                  );
-                })}
+              <div class="container text-center padding-list-product">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-5">
+                  {this.state.statusProductos === true &&
+                    this.state.statusCotizacion === true &&
+                    this.state.productosPage.map((element, index) => {
+                      return (
+                        <span className="col mb-4" key={index}>
+                          <CardTupperware
+                            producto={element}
+                            cotizacion={this.state.cotizacion}
+                          />
+                        </span>
+                      );
+                    })}
+                </div>
+              </div>
             </div>
           </div>
         </div>
