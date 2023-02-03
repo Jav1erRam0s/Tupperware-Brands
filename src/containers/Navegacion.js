@@ -78,21 +78,21 @@ class Navegacion extends React.Component {
     return <span>{salida}</span>;
   };
 
-  filtrarFueraDeVigencia = (element) => {
+  filtrarFueraDeFechaDeCierre = (element) => {
     const tiempoTranscurrido = Date.now();
     var hoy = new Date(tiempoTranscurrido);
     const diaHoy = hoy.getDate();
     const mesHoy = hoy.getMonth() + 1;
     const anioHoy = hoy.getFullYear();
 
-    const vigencia = new Date(element.cierra);
-    const diaVigente = vigencia.getDate() + 1;
-    const mesVigente = vigencia.getMonth() + 1;
-    const anioVigente = vigencia.getFullYear();
+    const cierre = new Date(element.cierra);
+    const diaCierre = cierre.getDate() + 1;
+    const mesCierre = cierre.getMonth() + 1;
+    const anioCierre = cierre.getFullYear();
 
     if (
-      anioVigente > anioHoy ||
-      (anioVigente === anioHoy && mesVigente >= mesHoy && diaVigente >= diaHoy)
+      anioCierre > anioHoy ||
+      (anioCierre === anioHoy && mesCierre >= mesHoy && diaCierre >= diaHoy)
     ) {
       return (
         <DropdownItem>
@@ -123,17 +123,17 @@ class Navegacion extends React.Component {
       const tiempoTranscurrido = Date.now();
       var hoy = new Date(tiempoTranscurrido);
       const diaHoy = hoy.getDate();
-      const mesHoy = hoy.getMonth() + 1;
+      const mesHoy = hoy.getMonth();
       const anioHoy = hoy.getFullYear();
       const fechaHoy = new Date(anioHoy, mesHoy, diaHoy);
 
-      const vigencia = new Date(element.cierra);
-      const diaVigente = vigencia.getDate() + 1;
-      const mesVigente = vigencia.getMonth() + 1;
-      const anioVigente = hoy.getFullYear();
-      const fechaVigente = new Date(anioVigente, mesVigente, diaVigente);
+      const cierre = new Date(element.cierra);
+      const diaCierre = cierre.getDate() + 1;
+      const mesCierre = cierre.getMonth();
+      const anioCierre = cierre.getFullYear();
+      const fechaCierre = new Date(anioCierre, mesCierre, diaCierre);
 
-      if (fechaVigente >= fechaHoy) {
+      if (fechaCierre >= fechaHoy && anioCierre === anioHoy) {
         mostrar = false;
         break;
       }
@@ -228,7 +228,7 @@ class Navegacion extends React.Component {
                     this.state.folletos.map((element, index) => {
                       return (
                         <span className="itemsNav">
-                          {this.filtrarFueraDeVigencia(element)}
+                          {this.filtrarFueraDeFechaDeCierre(element)}
                         </span>
                       );
                     })}
