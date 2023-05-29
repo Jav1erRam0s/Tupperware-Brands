@@ -79,21 +79,21 @@ class Navegacion extends React.Component {
   };
 
   filtrarFueraDeFechaDeCierre = (element) => {
+
     const tiempoTranscurrido = Date.now();
     var hoy = new Date(tiempoTranscurrido);
     const diaHoy = hoy.getDate();
-    const mesHoy = hoy.getMonth() + 1;
+    const mesHoy = hoy.getMonth();
     const anioHoy = hoy.getFullYear();
+    const fechaHoy = new Date(anioHoy, mesHoy, diaHoy);
 
     const cierre = new Date(element.cierra);
     const diaCierre = cierre.getDate() + 1;
-    const mesCierre = cierre.getMonth() + 1;
+    const mesCierre = cierre.getMonth();
     const anioCierre = cierre.getFullYear();
+    const fechaCierre = new Date(anioCierre, mesCierre, diaCierre);
 
-    if (
-      anioCierre > anioHoy ||
-      (anioCierre === anioHoy && mesCierre >= mesHoy && diaCierre >= diaHoy)
-    ) {
+    if (fechaCierre >= fechaHoy) {
       return (
         <DropdownItem>
           <a
@@ -120,6 +120,7 @@ class Navegacion extends React.Component {
     var mostrar = true;
 
     for (const element of folletos) {
+
       const tiempoTranscurrido = Date.now();
       var hoy = new Date(tiempoTranscurrido);
       const diaHoy = hoy.getDate();
@@ -133,7 +134,7 @@ class Navegacion extends React.Component {
       const anioCierre = cierre.getFullYear();
       const fechaCierre = new Date(anioCierre, mesCierre, diaCierre);
 
-      if (fechaCierre >= fechaHoy && anioCierre === anioHoy) {
+      if (fechaCierre >= fechaHoy) {
         mostrar = false;
         break;
       }
