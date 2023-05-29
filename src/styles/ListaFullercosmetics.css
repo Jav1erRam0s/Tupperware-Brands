@@ -1,5 +1,8 @@
+.page-fullercosmetics {
+  background-color: rgb(86, 86, 86);
+}
+
 .bodyProduct {
-  background-color: #f4f6f7;
   padding-top: 20px;
   padding-right: 15px;
   padding-left: 15px;
@@ -7,7 +10,6 @@
 
 .content-productos {
   min-height: calc(100vh - 120px);
-  background-color: #f4f6f7;
 }
 
 @media (max-width: 767px) {
@@ -41,7 +43,6 @@
 .nav-pagination {
   margin-bottom: 0;
   padding-bottom: 1rem;
-  background-color: #f4f6f7;
 }
 
 .fuente-pagination {

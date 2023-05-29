@@ -211,6 +211,7 @@ class ListaTupperware extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <div className="page-tupperware">
         <div className="content-productos">
           {/* PROMOCIONES */}
           {this.state.statusPromos === true &&
@@ -271,7 +272,7 @@ class ListaTupperware extends React.Component {
         {this.state.statusProductos === true &&
           this.state.paginacion.length >= 2 && (
             <nav aria-label="Page navigation example">
-              <ul class="nav-pagination pagination justify-content-center fuente-pagination">
+              <ul  className="barra" class="nav-pagination pagination justify-content-center fuente-pagination">
                 <li class="page-item">
                   <a href="#irArriba" className="anclaje">
                     <button
@@ -318,6 +319,7 @@ class ListaTupperware extends React.Component {
               </ul>
             </nav>
           )}
+          </div>
       </React.Fragment>
     );
   }

@@ -95,6 +95,7 @@ class ListaHomeware extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <div className="page-homeware">
         <div className="content-productos">
           {/* LISTA DE PRODUCTOS */}
           <div className="bodyProduct">
@@ -182,6 +183,7 @@ class ListaHomeware extends React.Component {
               </ul>
             </nav>
           )}
+          </div>
       </React.Fragment>
     );
   }

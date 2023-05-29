@@ -1,6 +1,6 @@
 .content {
   min-height: calc(100vh - 120px);
-  background-color: #f4f6f7;
+  background-color: rgb(86, 86, 86);
   padding-top: 20px;
   padding-right: 15px;
   padding-left: 15px;
@@ -14,7 +14,7 @@
 
 .infoContactenosTitle {
   font-family: infoMap, infoMap; /*Si no carga bien la fuente importada aplica la sans-serif*/
-  color: #212529;
+  color: white;
   font-size: 25px;
   margin-bottom: 15px;
   margin-left: 25px;
@@ -23,7 +23,7 @@
 
 .infoContactenos {
   font-family: infoContactenos, infoContactenos; /*Si no carga bien la fuente importada aplica la sans-serif*/
-  color: #212529;
+  color: rgb(245, 245, 245);
   font-size: 18px;
   margin-bottom: 25px;
   margin-top: 20px;
@@ -103,7 +103,7 @@
 
 .infoMap {
   font-family: infoMap, infoMap; /*Si no carga bien la fuente importada aplica la sans-serif*/
-  color: #212529;
+  color: white;
   font-size: 25px;
   margin-bottom: 25px;
   margin-left: 10px;

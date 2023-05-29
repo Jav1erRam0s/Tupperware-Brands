@@ -11,10 +11,16 @@
   border-radius: 7px;
 }
 
+.card {
+  border-style: outset;
+  border-color: #e40082 !important;
+  border-width: 1px;
+}
+
 .card:hover {
   border-style: outset;
-  border-color: #e40082;
-  border-width: 3px;
+  border-color: #e40082 !important;
+  border-width: 2px;
 }
 
 .card:hover .titleCard {
